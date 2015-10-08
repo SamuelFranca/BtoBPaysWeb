@@ -1,0 +1,31 @@
+{
+    "webroot": "wwwroot",
+
+    "dependencies": {
+        "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta7",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta7",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta7",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.Json": "1.0.0-beta7",
+        "Microsoft.Framework.Logging.Console": "1.0.0-beta7",
+        "Newtonsoft.Json": "7.0.1",
+        "Microsoft.AspNet.WebApi.Client": "5.2.3"
+    },
+
+    "commands": {
+        "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5004"
+    },
+
+    "frameworks": {
+        "dnx451": { }
+    },
+
+    "exclude": [
+        "wwwroot"
+    ],
+    "publishExclude": [
+        "**.xproj",
+        "**.user",
+        "**.vspscc"
+    ]
+}
